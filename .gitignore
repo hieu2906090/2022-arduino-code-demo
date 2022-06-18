@@ -4,6 +4,7 @@
 ### C++ ###
 # Prerequisites
 *.d
+.vscode
 
 # Compiled Object files
 *.slo
@@ -31,7 +32,12 @@
 *.lib
 
 # Executables
+.DS_Store
+*.bin
+*.sh
+*.run
 *.exe
+*.exec
 *.out
 *.app
 
