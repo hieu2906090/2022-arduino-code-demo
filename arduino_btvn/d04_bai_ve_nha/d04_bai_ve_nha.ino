@@ -23,7 +23,7 @@ void chayLedTuTrungVi(int doDaiMang) {
     // B1. Open led
     loopLedByMode(soLanChay, soTrungVi, HIGH, 300);
     // B2. Dim led
-    loopLedByMode(soLanChay, soTrungVi, HIGH, 300);
+    loopLedByMode(soLanChay, soTrungVi, LOW, 300);
 }
 
 // ################################################################################
