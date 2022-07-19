@@ -17,7 +17,10 @@ const int enb = 5;
 #define echo_pin 4
 
 #define maximum_distance 200
+#define minimum_distance 15
+
 boolean goesForward = false;
+
 int distance = 100;
 
 NewPing sonar(trig_pin, echo_pin, maximum_distance);  // sensor function
@@ -97,7 +100,7 @@ int lookLeft() {  // nhin trai lai khoang cach
     delay(100);
     servo_motor.write(90);
     return distance;
-    delay(100);
+    // delay(100);
 }
 
 int readPing() {
@@ -118,10 +121,8 @@ void moveStop() {  // dung lai
 }
 
 void moveForward() {  // di thang
-
     if (!goesForward) {
         goesForward = true;
-
         digitalWrite(LeftMotorForward, HIGH);
         digitalWrite(RightMotorForward, HIGH);
         digitalWrite(LeftMotorBackward, LOW);
