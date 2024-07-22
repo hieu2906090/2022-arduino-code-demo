@@ -57,19 +57,19 @@ int lookLeft() {  // nhin trai lai khoang cach
     return distance;
 }
 
-void runServoMotor() {
-    int distance;
-    for (int i = 0; i < 180; i++) {
-        myservo.write(i);
-        delay(2);
-        //        distance = returnDistance();
-    }
-    for (int pos = 180; pos >= 1; pos--) {
-        myservo.write(pos);
-        delay(2);
-        //        distance = returnDistance();
-    }
-}
+// void runServoMotor() {
+//     int distance;
+//     for (int i = 0; i < 180; i++) {
+//         myservo.write(i);
+//         delay(2);
+//         //        distance = returnDistance();
+//     }
+//     for (int pos = 180; pos >= 1; pos--) {
+//         myservo.write(pos);
+//         delay(2);
+//         //        distance = returnDistance();
+//     }
+// }
 
 // ################################################################################
 // II. DC MOTOR CODE SECTION
